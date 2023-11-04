@@ -1,0 +1,256 @@
+/* common part */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+:root{
+    --btn-color:hsl(14, 98%, 50%);
+    --black-color:hsl(0, 0%, 10%);
+    --black-light:hsl(0, 0%, 35%);
+    --body:hsl(0, 0%, 87%);
+}
+html{
+    font-size: 108%;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.post-slider img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 95%;
+}
+.content{
+    background: #fff; 
+    height: 31rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.item{
+    padding: .5rem;
+}
+.content:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+.widget-post{
+    display: flex;
+    flex-direction: column;
+}
+
+/* header section start */
+.carousel-caption{
+    color: var(--btn-color);
+    font-weight: bolder;
+    padding-bottom: 9rem;
+    
+}
+.carousel-item{
+    width: 100%;
+    height: 380px;
+}
+
+.baner{
+    margin-top: 1.5rem;
+}
+.nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+/* about me section start*/
+.my_img{
+    width: 100%;
+    height: 100%;
+}
+.about_me p{
+    text-align: justify;
+    font-size: .85rem;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+.my_social_link{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.link{
+    color: #233242;
+    transition: 0.5s ease;
+}
+.link:hover{
+    color: #51B56D;
+}
+.more-btn{
+    font-size: .8rem;
+}
+.skill_r{
+    margin-left: 3.5rem;
+}
+.more-btn a{
+    text-decoration: none;
+}
+.skill_item{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.skills li{
+    list-style: none;
+}
+.edu_item .item_subtitels{
+    margin-top: -1rem;
+}
+.social_items a{
+    text-decoration: none;
+    color: #51B56D;
+}
+.downloads_btn{
+    text-decoration: none;
+    border: 2px solid #51B56D;
+    color: #233242;
+    border-radius: 5px; 
+    padding: .5rem;
+    transition: 0.5s ease-in-out;
+}
+.downloads_btn:hover{
+    background: #51B56D;
+    color: #fff;
+}
+/* about me section end*/
+
+/* recent post start */
+.recent_item{
+    padding: 0;
+}
+.recent_item p{
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+.recent_item h6{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: -.5rem 0 .5rem 0;
+}
+/* recent post end */
+
+/* blog section start */
+.post-slider img{
+    width: 100%;
+    height: 250px;
+}
+.dort_desc{
+    text-align: justify;
+}
+
+.latest{
+    padding: .5rem 0;
+}
+.latest{
+    padding-top: .3rem;
+}
+.latest a{
+    text-decoration: none;
+    color: #02010a;
+}
+.categories a{
+    text-decoration: none;
+    color: #02010a;  
+}
+.side_bar .form-control:focus{
+    box-shadow: none;
+}
+.side_bar form{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 1rem;
+}
+.side_bar input{
+    width: 70%;
+    border: none;
+    box-shadow: none;
+}
+.blog_details img{
+    width: 100%;
+    height: 60%;
+}
+/* blog section end */
+
+
+/* member section start */
+.card-img img{
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-img:hover .card-social{
+    display: block;
+    margin-top: -4rem;
+}
+.card-social{
+    background: #fff;
+    padding: .6rem .8rem;
+    position: absolute;
+    cursor: pointer;
+    left: 2.3rem;
+    
+    border-radius: 5px;
+    display: none;
+    transition: 0.5s ease;
+}
+.list-inline-item a{
+    text-decoration: none;
+    color: #02010a;
+}
+.card-body h2{
+    font-size: 1.4rem;
+}
+/* member section end */
+
+/* service section start */
+.service-item{
+    padding-left: 1.5rem;
+    background: red;
+    
+}
+.rounded{
+    cursor: pointer;
+    background: #fff;
+    color: #02010a;
+    height: 100%;
+}
+/* service section end */
+
+/* contact section start */
+.contact-info i{
+    font-size: 1.5rem;
+    color: #51B56D;
+    padding-bottom: .8rem;
+}
+.phone .second{
+    margin: -1rem 0 1.2rem 0;
+
+}
+/* contact section end */
+
+/* footer section start */
+.footer-widget ul li a{
+    color: #fff;
+   
+}
+.footer{
+    background: #02010aed;
+}
+/* footer section end */
+
