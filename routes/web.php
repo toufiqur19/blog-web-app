@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\AdPage;
+use App\Livewire\AdService;
 use App\Livewire\BlogDetails;
 use App\Livewire\BlogPage;
 use App\Livewire\ContractPage;
@@ -24,6 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',ShowHome::class)->name('home');
+Route::get('/add',AdPage::class)->name('adService');
 Route::get('/services',ShowServicePage::class)->name('servicesPage');
 Route::get('/service/{id}',ShowService::class)->name('servicesDetals');
 Route::get('/about',ShowAboutPage::class)->name('aboutUs');

@@ -4,7 +4,7 @@
           <div class="row align-items-center justify-content-center">
             <div class="row baner">
               <div class="col-md-9 mx-auto text-center">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="carouselExampleFade" class="carousel slide slide" data-bs-ride="carousel">
                   <div class="carousel-inner ">
                    
                     @foreach($sliders as $key => $slider)
@@ -52,11 +52,13 @@
         </div>
     </section>
       
+
     <section class="banner bg-tertiary position-relative overflow-hidden">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="row baner">
             <div class="col-md-9 mx-auto text-center">
+              @include('livewire.ad-page')
                 <div class="row">
                   <div class="section-title text-center">
                     <h3 class="text-dark text-uppercase fw-bold mb-3 text-center">Our service</h3>
@@ -64,46 +66,14 @@
                   @foreach ($services as $service)
                   <div class="icon-box-item text-center col-lg-4 col-md-6 mb-4">
                     <div class="rounded shadow py-5 px-4">
-                      <div class="icon">{!! $service->icon_class !!}</div>
-                      <h3 class="mb-3 service-title">{{ $service->title }}</h3>
-                      <p class="mb-0 service-description">{{ $service->short_desc }}</p><a class="btn btn-sm btn-outline-primary" href="service-details.html">View Details <i class="las la-arrow-right ms-1"></i></a>
+                      <div class="icon pb-2">{!! $service->icon_class !!}</div>
+                      <h3 class="service-title">{{ $service->title }}</h3>
+                      <p class="mb-0 service-description pb-3">{{ $service->short_desc }}</p><a class="btn btn-sm btn_dtl" wire:navigate href="{{route('servicesDetals',$service->id)}}">View Details <i class="las la-arrow-right ms-1"></i></a>
                     </div>
                   </div>
                   @endforeach
                 </div>
-                {{-- our team --}}
-                <div class="row position-relative">
-                  <div class="section-title text-center">
-                    <h3 class="text-dark text-uppercase fw-bold mb-3 text-center">Our Team member</h3>
-                  </div>
-                  @foreach ($teams as $team)
-                  <div class="col-xl-3 col-lg-4 col-md-6 mt-4">
-                    <div class="card bg-transparent border-0 text-center">
-                      <div class="card-img">
-                        <img src="{{asset('storage/'.$team->image)}}" class="" alt="">
-                        <ul class="card-social list-inline">
-                          @if ($team->fb_url != '')
-                          <li class="list-inline-item"><a class="facebook link" target="_blank" href="{{$team->fb_url}}"><i class="fab fa-facebook"></i></a>
-                          </li>  
-                          @endif
-                          @if ($team->tw_url != '')
-                          <li class="list-inline-item"><a class="twitter link" target="_blank" href="{{$team->tw_url}}"><i class="fab fa-twitter"></i></a>
-                          </li>
-                          @endif
-                          @if ($team->in_url != '')
-                          <li class="list-inline-item"><a class="instagram link" target="_blank" href="{{$team->in_url}}"><i class="fab fa-linkedin"></i></a>
-                          </li>
-                          @endif
-                        </ul>
-                      </div>
-                      <div class="card-body">
-                        <h2>{{$team->name}}</h2>
-                        <p>{{$team->designation}}</p>
-                      </div>
-                    </div>
-                  </div>
-                  @endforeach
-                </div>
+                
 
               </div>
             

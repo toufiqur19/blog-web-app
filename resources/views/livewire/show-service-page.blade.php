@@ -22,8 +22,8 @@
                     <div class="icon-box-item text-center col-lg-4 col-md-6 mb-4">
                       <div class="rounded shadow py-5 px-4">
                         <div class="icon">{!! $service->icon_class !!}</div>
-                        <h3 class="mb-3 service-title">{{ $service->title }}</h3>
-                        <p class="mb-0 service-description">{{ $service->short_desc }}</p><a class="btn btn-sm btn-outline-primary" href="service-details.html">View Details <i class="las la-arrow-right ms-1"></i></a>
+                        <h3 class="service-title">{{ $service->title }}</h3>
+                        <p class="mb-0 service-description pb-3">{{ $service->short_desc }}</p><a class="btn btn-sm btn_dtl" wire:navigate href="{{route('servicesDetals',$service->id)}}">View Details <i class="las la-arrow-right ms-1"></i></a>
                       </div>
                     </div>
                     @endforeach
