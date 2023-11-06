@@ -71,19 +71,27 @@
 			<!-- Grid column -->
 			<div class="col-md-5">
 				<div class="footer-widget text-white">
-					<h5 class="mb-4 font-secondary">Service</h5>
-					<ul class="list-unstyled">
-						<li class="mb-2"><a href="service-details.html">Digital Marketing</a>
-						</li>
-						<li class="mb-2"><a href="service-details.html">Web Design</a>
-						</li>
-						<li class="mb-2"><a href="service-details.html">Logo Design</a>
-						</li>
-						<li class="mb-2"><a href="service-details.html">Graphic Design</a>
-						</li>
-						<li class="mb-2"><a href="service-details.html">SEO</a>
-						</li>
-					</ul>
+						<!-- Facebook -->
+						<a class="navbar-brand m-1 text-white" href="{{ route('home')}}"><h3>Ts Blog</h3></a>
+						<a href="https://www.facebook.com/mdtowfequrrahman.sobuj/"
+						   class="btn btn-outline-light btn-floating m-1 text-white"
+						   role="button"
+						   ><i class="fab fa-facebook-f"></i
+						  ></a>
+			
+						<!-- linkedin -->
+						<a href="https://www.linkedin.com/in/toufiqur9493/"
+						   class="btn btn-outline-light btn-floating m-1 text-white"
+						   role="button"
+						   ><i class="fa-brands fa-linkedin"></i
+						  ></a>
+			
+						<!-- github -->
+						<a href="https://github.com/toufiqur19"
+						   class="btn btn-outline-light btn-floating m-1 text-white"
+						   role="button"
+						   ><i class="fa-brands fa-github"></i
+						  ></a>
 				</div>
 			</div>
 			<!-- Grid column -->
@@ -144,29 +152,7 @@
 			<!-- Grid column -->
   
 			<!-- Grid column -->
-			<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-			  <!-- Facebook -->
-			  
-			  <a href="https://www.facebook.com/mdtowfequrrahman.sobuj/"
-				 class="btn btn-outline-light btn-floating m-1 text-white"
-				 role="button"
-				 ><i class="fab fa-facebook-f"></i
-				></a>
-  
-			  <!-- linkedin -->
-			  <a href="https://www.linkedin.com/in/toufiqur9493/"
-				 class="btn btn-outline-light btn-floating m-1 text-white"
-				 role="button"
-				 ><i class="fa-brands fa-linkedin"></i
-				></a>
-  
-			  <!-- github -->
-			  <a href="https://github.com/toufiqur19"
-				 class="btn btn-outline-light btn-floating m-1 text-white"
-				 role="button"
-				 ><i class="fa-brands fa-github"></i
-				></a>
-			</div>
+			
 			<!-- Grid column -->
 		  </div>
 		</section>
