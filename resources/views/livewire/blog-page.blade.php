@@ -1,4 +1,4 @@
-<main>
+<main class="blog">
     <section class="page-header bg-tertiary py-5">
         <div class="container">
             <div class="row">
@@ -26,7 +26,7 @@
                     <!-- categories -->
                     <div class="widget widget-categories">
                         
-                        <h5 class="widget-title"><span>Category</span></h5>
+                    <h5 class="widget-title fs-5 my-2"><span>Category</span></h5>
                        @if ($categories->isNotEmpty())
                             @foreach ($categories as $category)
                             <ul class="list-unstyled widget-list categories">			
@@ -39,7 +39,7 @@
                 
                     <!-- latest post -->
                     <div class="widget">
-                        <h5 class="widget-title"><span>Latest Article</span></h5>
+                        <h5 class="widget-title fs-5 my-2"><span>Latest Article</span></h5>
                         <!-- post-item -->
                         <ul class="list-unstyled widget-list">
                             @foreach ($latests as $latest)   
@@ -88,7 +88,7 @@
                             
                             
                             
-                            <div class="col-12">
+                            <div class="col-12 mb-5">
                                {{$articles->links()}}
                             </div>
                         </div>

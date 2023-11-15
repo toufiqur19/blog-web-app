@@ -1,10 +1,15 @@
 <?php
 
+use App\Http\Controllers\AuthManager;
+use App\Http\Controllers\CommentController;
 use App\Livewire\AdPage;
 use App\Livewire\AdService;
 use App\Livewire\BlogDetails;
 use App\Livewire\BlogPage;
 use App\Livewire\ContractPage;
+use App\Livewire\Login;
+use App\Livewire\LoginRegister;
+use App\Livewire\Register;
 use App\Livewire\ShowAboutPage;
 use App\Livewire\ShowHome;
 use App\Livewire\ShowService;
@@ -34,3 +39,8 @@ Route::get('/blog',BlogPage::class)->name('blogPage');
 Route::get('/blog/{id}',BlogDetails::class)->name('blogDetailsPage');
 Route::get('/team',TeamPage::class)->name('teamPage');
 Route::get('/contract',ContractPage::class)->name('contractPage');
+
+// login & registration
+Route::get('/login',LoginRegister::class)->name('login');
+Route::get('/registration',Register::class)->name('registration');
+

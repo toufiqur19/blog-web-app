@@ -3,7 +3,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="row baner">
-              <div class="col-md-9 mx-auto text-center">
+              <div class="col-lg-9 col-md-12 mx-auto text-center">
                 <div id="carouselExampleFade" class="carousel slide slide" data-bs-ride="carousel">
                   <div class="carousel-inner ">
                    
@@ -12,7 +12,7 @@
     
                       <img src="{{asset('storage/'.$slider->image)}}" class="" alt="">
                       <div class="carousel-caption d-none d-md-block">
-                        <h2 class="text-light">Wellcome To My Blog</h2>
+                        <h1 class="text-light">Wellcome To My Blog</h1>
                       </div>
                     </div>
                     @endforeach
@@ -28,7 +28,7 @@
                   </button>
                 </div>
             </div>
-              <div class="col-md-3 mx-auto">
+              <div class="col-lg-3 col-md-12 mx-auto my_info">
                   <div class="about_me">
                     <img class="my_img" src="{{asset('assets/img/my.jpg')}}" alt="">
                     <p class="py-2">My name is Toufiqur Rahman sobuj.I am 22 years old, I’m currently Studying Computer Science and Engineering(CSE) 5th semester.</p>
@@ -67,7 +67,7 @@
                   <div class="icon-box-item text-center col-lg-4 col-md-6 mb-4">
                     <div class="rounded shadow py-5 px-4">
                       <div class="icon pb-2">{!! $service->icon_class !!}</div>
-                      <h3 class="service-title">{{ $service->title }}</h3>
+                      <h3 class="service-title pb-2">{{ $service->title }}</h3>
                       <p class="mb-0 service-description pb-3">{{ $service->short_desc }}</p><a class="btn btn-sm btn_dtl" wire:navigate href="{{route('servicesDetals',$service->id)}}">View Details <i class="las la-arrow-right ms-1"></i></a>
                     </div>
                   </div>
@@ -85,13 +85,13 @@
                     @foreach ($latests as $latest)   
                     <li class="d-flex widget-post">
                         <a class="text-black" wire:navigate href="{{route('blogDetailsPage', $latest->id)}}">
-                            <div class="widget-post-image flex-shrink-0 me-3">
+                            <div class="widget-post-image">
                                 <img src="{{asset('storage/'.$latest->image)}}">
                             </div>
                         </a>
-                        <div class="flex-grow-1 latest">
+                        <div class="latest">
                             <small class="">{{$latest->published_at}} | {{$latest->name}}</small>
-                            <h6 class=" mb-0 pb-2"><a wire:navigate href="{{route('blogDetailsPage', $latest->id)}}">{{$latest->title}}</a></h6>
+                            <h6 class="mb-0 pb-2"><a wire:navigate href="{{route('blogDetailsPage', $latest->id)}}">{{$latest->title}}</a></h6>
                         </div>
                     </li>
                     @endforeach

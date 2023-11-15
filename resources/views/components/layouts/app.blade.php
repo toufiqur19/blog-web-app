@@ -10,11 +10,12 @@
 	<meta name="author" content="Themefisher">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
-    
+    <script src="https://kit.fontawesome.com/80a4ad522e.js" crossorigin="anonymous"></script>
 	<!-- # Google Fonts -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+	<script src="https://cdn.tailwindcss.com"></script>
 
     @livewireStyles
 </head>
@@ -22,38 +23,7 @@
 <body>
 
 <!-- navigation -->
-<section class="header">
-    <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
-        <div class="container container-fluid">
-          <a class="navbar-brand" href="{{ route('home')}}"><h3>Ts Blog</h3></a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon outline-primary"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav  fs-6">
-              <li class="nav-item">
-                <a wire:navigate class="nav-link active" aria-current="page" href="{{ route('home')}}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a wire:navigate class="nav-link" href="{{route('aboutUs')}}">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a wire:navigate class="nav-link" href="{{route('blogPage')}}">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a wire:navigate class="nav-link" href="{{ route('servicesPage')}}">Services</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-                <li class="nav-item">
-                  <a class="nav-link text-dark px-3 rounded" wire:navigate href="{{route('contractPage')}}">Contract</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-</section>
+@include('header.header')
 <!-- /navigation -->
 {{-- main/body section --}}
 {{ $slot }}
@@ -69,7 +39,7 @@
 		  <div class="row">
   
 			<!-- Grid column -->
-			<div class="col-md-5">
+			<div class="col-md-5 ">
 				<div class="footer-widget text-white">
 						<!-- Facebook -->
 						<a class="navbar-brand m-1 text-white" href="{{ route('home')}}"><h3>Ts Blog</h3></a>
@@ -96,7 +66,7 @@
 			</div>
 			<!-- Grid column -->
   
-			<hr class="w-100 clearfix d-md-none" />
+			<hr class="w-100 clearfix d-md-none mt-2 mb-3" />
   
 			<!-- Grid column -->
 			<div class="col-md-4">
@@ -116,7 +86,7 @@
 			</div>
   
 			<!-- Grid column -->
-			<hr class="w-100 clearfix d-md-none" />
+			<hr class="w-100 clearfix d-md-none mb-3" />
   
 			<!-- Grid column -->
 			<div class="col-md-3">
@@ -142,9 +112,9 @@
 		<section class="p-3 pt-0">
 		  <div class="row d-flex align-items-center">
 			<!-- Grid column -->
-			<div class="col-md-7 col-lg-8 text-center text-md-start">
+			<div class="col-md-12 col-lg-12 text-center text-md-start">
 			  <!-- Copyright -->
-			  <div class="p-3">
+			  <div class="">
 				<p>© 2020 Copyright | toufiqur@blog</p>
 			  </div>
 			  <!-- Copyright -->

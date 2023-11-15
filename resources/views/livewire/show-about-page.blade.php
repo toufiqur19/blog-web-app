@@ -1,4 +1,4 @@
-<main>
+<main class="about">
     <section class="page-header bg-tertiary py-5">
         <div class="container">
             <div class="row">
@@ -17,7 +17,7 @@
     
     <section class="container px-5">
         <div class="profile_info">
-            <div class="row shadow py-3">
+            <div class="row bg-light py-3">
                 <div class="col-lg-4">
                     <div class="profile_profileImg ">
                         <img src="/img/my.jpg" alt="sobuj">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="profile_name_detls">
-                        <div class="profile-about">
+                        <div class="profile-about mb-4">
                           <h1 class="profile_name">
                             <span class="profile_name_firstName">Toufiqur Rahman</span>
                           </h1>
@@ -37,7 +37,7 @@
                             same.
                           </p>
                         </div>
-                        <a class="downloads_btn" href="">Download Resume</a>
+                        <a class="downloads_btn" download href="{{asset('assets/img/images.jpg')}}">Download Resume</a>
                       </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
     </section>
    
    <section class="container px-5 py-5">
-    <div class="row shadow py-3">
+    <div class="row bg-light py-3">
         <div class="col">
             <div class="social_link d-flex justify-content-between">
                 <div class="social_items1">
@@ -83,7 +83,137 @@
     </div>
    </section>
 
-   <section class="container skill_r pb-5">
+   <section class="container px-5 mb-5">
+    <div class="row">
+        <div class="col-lg-7 bg-light">
+          <div class="educations mt-3">
+            <h3 class="skils_title">EDUCATION</h3><hr class="hr.line">
+            <div class="edu_item">
+              <h4 class="item_title">Bachelors of Computer Science and Engineering(CSE)</h4>
+              <p class="item_subtitle pb-0">Jannat Ara Henry Science & Technology College</p>
+              <p class="item_subtitels mt-1">National University, Bangladesh</p>
+              <p class="item_preTitle">2019-2024</p>
+            </div>
+            <div class="edu_item">
+              <h4 class="item_title">HSC(Science)</h4>
+              <p class="item_subtitle">Govt. Begum Nurunnahar Tarkabagish Honors Collage</p>
+              <p class="item_preTitle">2016-2018</p>
+            </div>
+            <div class="edu_item">
+              <h4 class="item_title">SSC(Science)</h4>
+              <p class="item_subtitle">Betkhoir High School, Sherpur, Bogura</p>
+              <p class="item_preTitle">2010-2016</p>
+            </div>
+            <!-- certificate -->
+          <div class="certification">
+            <h3 class="skils_title">CERTIFICATION</h3><hr class="hr.line">
+            <div class="certification_item">
+              <h4 class="item_title">Learning & Earning Development Project(ICT Division)</h4>
+              <p class="item_subtitle">Graphics Design</p>
+              <p class="item_preTitle">2022</p>
+              <p class="description ledp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam,
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-5 bg-light pb-3">
+          <h3 class="skils_title mt-3">SKILLS</h3><hr class="hr.line">
+        <div class="skills mt-3">
+            <div class="m_skills">
+                <div class="skill_item">
+                    <li>Web Design</li>
+                    <li>Graphics Design</li>
+                    <li>UI/UX Design</li>
+                </div>
+              <div class="p_language">
+                <h5 class="skils_title">Programming Language</h5>
+                <div class="skill_item pb-0">
+                  <div class="skill_item1">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Php</li>
+                    <li>Python</li>
+                  </div>
+                  <div class="skill_item1">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap5</li>
+                  </div>
+                  <div class="skill_item1">
+                    <li>Numpy</li>
+                    <li>Matplotlib</li>
+                    <li>Pandas</li>
+                    <li>Laravel</li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p_language">
+                <h5 class="skils_title">Operating System</h5>
+                <div class="p_language_title">
+                  <div class="skill_item">
+                    <li>Windows</li>
+                    <li>Ubuntu</li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p_language">
+                <h5 class="skils_title">Database/Server</h5>
+                <div class="skill_item">
+                  <li>My SQL</li>
+                  <li>SQL Server</li>
+                </div>
+              </div>
+
+              <div class="Software">
+                <h5 class="skils_title">Software/Analytical Tools</h5>
+                <div class="tools">
+                  <div class="skill_item2 pb-0">
+                    <li>Jupyter Notebook</li>
+                    <li>MS Office</li>
+                    <li>VS Code</li>
+                  </div>
+                  <div class="skill_item2">
+                      <li>Power BI</li>
+                      <li>Illustrator</li>
+                      <li>Photoshop</li>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="interest">
+              <h3 class="title">INTEREST</h3><hr class="hr.line">
+              <div class="interest_items">
+                <div class="interest_item">
+                  <i class="fas fa-code"></i>
+                  <span>Programming</span>
+                </div>
+                <div class="interest_item">
+                  <i class="fas fa-music"></i>
+                  <span>Music</span>
+                </div>
+                <div class="interest_item">
+                  <i class="fas fa-book"></i>
+                  <span>Books</span>
+                </div>
+                <div class="interest_item">
+                  <i class="fas fa-plane-departure"></i>
+                  <span>Travel</span>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+    </div>
+   </section>
+
+   {{-- <section class="container skill_r pb-5">
     <div class="row gap-2">
         <div class="col-lg-6 shadow py-3">
             <div class="educations">
@@ -204,6 +334,6 @@
               </div>
         </div>
     </div>
-   </section>
+   </section> --}}
    
 </main>

@@ -25,6 +25,36 @@
                 <img src="{{asset('storage/'.$blogDetails->image)}}">
             </div><br>
               {{$blogDetails->description}}
+
+              <div class="comment-area mt-5">
+                <livewire:comments :model="$blogDetails"/>
+              </div>
+              {{-- <div class="comment_area mt-4">
+                <div class="card card-body">
+                    <h5 class="card-title">blog</h5>
+                    <form action="{{route('comments')}}" method="POST">
+                        <textarea name="comment" class="form-control" required></textarea>
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    </form>
+                </div>
+
+                <div class="card card-body shadow-sm mt-3">
+                    <div class="detail-area">
+                        <h6 class="user-name mb-1">
+                            user name
+                            <small class="ms-3 text-primary">comment on date</small>
+                        </h6><p class="user-comment mb-1">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, sequi!
+                        </p>
+                    </div>
+                    <div>
+                        <a href="" class="btn btn-primary btn-sm me-2">Edit</a>
+                        <a href="" class="btn btn-danger btn-sm me-2">Delete</a>
+                    </div>
+                </div>
+              </div> --}}
+
+
             </div>
             {{-- right side --}}
             <div class="col-lg-4 side_bar py-5">

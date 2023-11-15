@@ -17,6 +17,9 @@ img{
     width: 100%;
     height: 100%;
 }
+.con_btn{
+    color: #02010a;
+}
 
 .post-slider img{
     width: 100%;
@@ -46,13 +49,37 @@ img{
 }
 
 /* header section start */
+/* navbar */
+ul .menu-item a{
+    padding: 10px;
+}
+ul .menu-item a:hover{
+    background-color: #f1f5f9;
+    border-radius: 5px;
+    color: #51B56D;
+}
+ul .logout a:hover{
+    color: #51B56D;
+}
+ul .logout{
+    border-radius: 0 0 5px 5px;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+.brand:hover{
+    color: #51B56D;
+}
+/* navbar end*/
+
 .carousel-caption{
     color: var(--btn-color);
+    font-size: 1.5rem;
     font-weight: bolder;
     padding-bottom: 9rem;
     
 }
-.carousel-item{
+.carousel-item img{
     width: 100%;
     height: 380px;
 }
@@ -78,6 +105,16 @@ img{
     color: #fff;
 }
 
+/* header section end*/
+
+/* home section start*/
+
+.my_social_link {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    gap: 1rem;
+}
 /* about me section start*/
 .my_img{
     width: 100%;
@@ -87,16 +124,15 @@ img{
     text-align: justify;
     font-size: .85rem;
 }
+.profile_name_detls{
+    padding: 2rem 1rem 0 0;
+    text-align: justify;
+}
 .social{
     display: flex;
     justify-content: space-between;
 }
-.my_social_link{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    font-size: 1.1rem;
-}
+
 .link{
     color: #233242;
     transition: 0.5s ease;
@@ -105,21 +141,33 @@ img{
     color: #51B56D;
 }
 .more-btn{
-    font-size: .9rem;
+    font-size: .85rem;
 }
-.skill_r{
-    margin-left: 3.5rem;
-}
+
 .more-btn a{
     text-decoration: none;
 }
-.skill_item{
+.skils_title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+.item_title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: .5rem 0; 
+}
+.tools{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     padding-bottom: 1rem;
 }
 .skills li{
     list-style: none;
+}
+.skill_item{
+    display: flex;
+    gap: 3rem;
 }
 .edu_item .item_subtitels{
     margin-top: -1rem;
@@ -276,3 +324,31 @@ img{
     top: 5rem;
     left: 10rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .blog{
+        font-size: 120%;
+    }
+    .my_info {
+      width: 100%;
+    }
+   .con_title{
+    margin-bottom: -4rem;
+    font-size: 1.4rem;
+   } 
+   .phone{
+    margin-top: 1.5rem;
+   }
+   .widget-title{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+   }
+   .social_link{
+    display: flex;
+    flex-direction: column;
+   }
+   .skill_item{
+    gap: 1rem;
+   }
+  
+  }

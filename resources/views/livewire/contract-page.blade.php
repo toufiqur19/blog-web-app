@@ -21,7 +21,7 @@
                 <div class="col-lg-10">
                     <div class="shadow rounded p-5  ">
                         <div class="col-12 mb-5 text-center">
-                            <h4>Leave Us A Message</h4>
+                            <h4 class="con_title fs-4">Leave Us A Message</h4>
                         </div>
                         <div class="row">
                             <div class="col-lg-5 mt-5 mt-lg-0">
@@ -31,10 +31,10 @@
                                         <h5>Address</h5>
                                         <p>Nischintapur, Dhonut,<br> Bogura</p>
                                       </div>
-                                      <div class="phone">
+                                      <div class="phone mt-2">
                                         <i class="fa-solid fa-phone"></i>
                                         <h5>Phone</h5>
-                                        <p>+8801884858245</p>
+                                        <p class="mb-3">+8801884858245</p>
                                         <p class="second">+8801575378379</p>
                                       </div>
                                       <div class="email">
@@ -74,7 +74,7 @@
                                         <span class="text-danger">{{ $message }}</span> 
                                         @enderror
                                     </div>
-                                        <button type="submit" class="btn btn-dark">Send Message</button>
+                                        <button type="submit" class="btn btn-dark con_btn">Send Message</button>
                                 </form>
                             </div>
                             

@@ -7,9 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Str;
+use Usamamuneerchaudhary\Commentify\Traits\Commentable;
 
 class Post extends Model
 {
+    use Commentable;
     use HasFactory;
 
     protected $fillable = [
